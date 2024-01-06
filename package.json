@@ -7,11 +7,10 @@
     "test": "npx jest",
     "dev": "nodemon ./server/index.ts",
     "lint": "npx ts-node -r tsconfig-paths/register ./server/index.ts eslint ./server --ext .ts",
-    "dev:lint": "npm lint && npm dev",
     "build": "npx tsc",
-    "start": "npx tsc && node dist/index.js",
+    "start:build": "npx tsc && node dist/index.js",
     "start:dev": "npx ts-node -r tsconfig-paths/register ./server/index",
-    "prod": "npm run lint && npm run test && npm run build"
+    "prod": "npm run test && npm run build"
   },
   "keywords": [],
   "author": "Mohamed Nassar",
